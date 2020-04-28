@@ -31,3 +31,6 @@ jobs:
       - run: pip install -r requirements.txt || true
       # TODO: If we run pytest, then it never finishes until GitHub Actions kills it :-(
       # - run: pytest . || true
+      - run: python test_program.py
+      - run: python test_program_json.py
+      - run: python test_program_timing.py
