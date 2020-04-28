@@ -1,7 +1,11 @@
-import logging
-import Queue as queue
 import atexit
+import logging
 import sys
+try:
+    import queue  # Python3
+except ImportError:
+    import Queue as queue  # Python 2
+
 import SlackQueue
 
     
